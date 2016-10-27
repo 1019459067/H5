@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <!--
+    CSS遵循：
+    1.相同级别的选择器：a.就近原则 b.叠加原则
+    2.优先级：
+        important > id选择器 > 类选择器 > 标签选择器
+    3.选择器的针对性越强，他的优先级别就越高
+    -->
+    <style>
+        /*复合选择器*/
+        div.test1{
+            color: yellow;
+        }
+        div#main{
+            color: aqua;
+        }
+        /*id选择器*/
+        #main{/*权值：100*/
+            color: mediumaquamarine;
+        }
+        /*类选择器*/
+        .test1{/*权值：10*/
+            color: gold;
+        }
+        /*标签选择器*/
+        div{/*权值：1*/
+            color: red !important/*权值：1000*/;
+        }
+        div{/*权值：1*/
+            color: green;
+        }
+        /*通配符*/
+        *{/*权值：0*/
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+<div id="main" class="test1">我是div</div>
+</body>
+</html>
