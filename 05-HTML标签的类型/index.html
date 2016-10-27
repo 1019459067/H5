@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        div{
+            background-color: red;
+            width: 400px;
+            height: 100px;
+            /*隐藏标签*/
+            /*display: none;*/
+            /*让块级标签变成行内标签*/
+            /*display: inline;*/
+            /*让块级标签变成行内-块级标签*/
+            display: inline-block;
+
+        }
+        p{
+            background-color: blue;
+            width: 50px;
+        }
+
+        span{
+            background-color: antiquewhite;
+            /*让行内标签变成块级标签*/
+            display: block;
+        }
+
+        a{
+            background-color: saddlebrown;
+        }
+
+        input{
+            width: 500px;
+            height: 50px;
+        }
+
+        button{
+            width: 250px;
+            height: 120px;
+        }
+    </style>
+</head>
+<body>
+<!--块级标签-->
+<div>我是块级标签</div>
+<div>我是块级标签</div>
+<p>段落</p>
+<br>
+<br>
+
+<!--行内标签-->
+<span>我是span,行内标签</span>
+<span>我是span,行内标签</span>
+<a href="#">超链接</a>
+<a href="#">超链接</a>
+<br>
+<br>
+
+<!--行内-块级标签-->
+<input placeholder="我是输入框">
+<button>我是按钮</button>
+</body>
+</html>
