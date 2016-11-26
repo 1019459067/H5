@@ -1,0 +1,112 @@
+/*设置边距*/
+* {
+    margin: 0;
+    padding: 0;
+}
+a{
+    color: black;
+}
+body{
+    font-size: 13px;
+    /*背景图片*/
+    background: url("../images/2.jpg");
+}
+/*头部*/
+#header{
+    background-color: rgba(0,0,0,0.2);
+    text-align: right;
+    margin: 0px 0px 30px 0;
+    height: 38px;
+    line-height: 38px;
+}
+#header a{
+    margin-right: 7px;
+    font-weight: bolder;
+    font-size: 15px;
+    color: white;
+}
+#header a.more-product{
+    display: inline-block;
+    background-color: #3385ff;
+    color: white;
+    text-align: center;
+    width: 80px;
+    height: 28px;
+    line-height: 28px;
+    text-decoration: none;
+    font-weight: normal;
+}
+/*主要内容*/
+#content{
+    /*background-color: green;*/
+}
+#content .search input{
+    width: 500px;
+    height: 33px;
+    padding: 5px;
+
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+}
+#content .search input:focus{
+    outline: none;
+    border: 1px solid #3385ff;
+}
+#content .search{
+    /*background-color:  blue;*/
+    width: 600px;
+    height: 33px;
+    /*居中*/
+    margin: 0px auto;
+}
+#content .search {
+    margin-bottom: 40px;
+}
+#content .search a{
+    display: inline-block;
+    background-color: #3385ff;
+    color: white;
+    text-align: center;
+    width: 100px;
+    height: 33px;
+    line-height: 33px;
+    text-decoration: none;
+    font-weight: normal;
+    float: right;
+}
+#content .logo{
+    text-align: center;
+}
+#content .logo img{
+    width: 270px;
+    height: 129px;
+}
+
+#content .dom img{
+    width: 150px;
+    height: 100px;
+    margin: 5px;
+}
+#content .dom img:hover{
+    /*设置不透明度*/
+    opacity: 0.5;
+}
+#content .dom{
+    text-align: center;
+    /*margin-top: 30px;*/
+}
+/*尾部*/
+#footer{
+    /*background-color: yellow;*/
+    margin-top: 66px;
+    text-align: center;
+}
+#footer p{
+    margin-top: 10px;
+}
+#footer p a{
+    color: blue;
+}
+#footer p.footer-top a{
+    margin: 0 5px;
+}
